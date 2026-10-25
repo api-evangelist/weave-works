@@ -1,0 +1,7 @@
+generated: '2026-10-25'
+method: derived
+deployment:
+  mode: none
+  auth: none
+  verified: derived
+source: "Weaveworks website"

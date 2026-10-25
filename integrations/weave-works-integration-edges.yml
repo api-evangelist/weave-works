@@ -1,0 +1,18 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/weave-works/integrations
+- https://zapier.com/apps/weaveworks/integrations
+- https://n8n.io/integrations/weave-works/
+- https://composio.dev/toolkits/weave-works
+- https://monid.ai/tools/weave-works
+checked:
+- https://composio.dev/toolkits/weave-works
+- https://monid.ai/tools/weave-works
+- https://n8n.io/integrations/weave-works/
+- https://zapier.com/apps/weave-works/integrations
+- https://zapier.com/apps/weaveworks/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

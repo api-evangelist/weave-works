@@ -1,26 +1,67 @@
 aid: weave-works
+
 name: Weaveworks
-description: 'Weaveworks is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by accel, gv) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Weaveworks provides modern cloud-native tools for developers and operators to build, observe, and secure applications on Kubernetes. Their flagship product, Weave GitOps, enables continuous delivery with GitOps workflows, while Weave Cloud offers monitoring, logging, and security. They also offer Weave Flux for GitOps automation and Weave Net for networking. The company focuses on simplifying Kubernetes adoption and operational excellence for enterprises.'
+
 url: https://raw.githubusercontent.com/api-evangelist/weave-works/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+- Cloud-native
+- Kubernetes
+- GitOps
+- Monitoring
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common:
+- type: Hosts
+  url: hosts/weave-works-hosts.yml
+- type: Vendors
+  url: vendors/weave-works-vendors.yml
+- type: DomainSecurity
+  url: security/weave-works-domain-security.yml
+- type: Website
+  url: http://www.weave.works
+
+apis: []
+
 x-backed-by:
 - accel
 - gv
-common:
-- type: Website
-  url: http://www.weave.works
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  method: derived
+  generated: '2026-10-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company's own front door answers a browser with an anti-bot challenge, so nothing behind it is reachable by any reader
+  evidence:
+  - url: http://www.weave.works
+    status: 403
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
